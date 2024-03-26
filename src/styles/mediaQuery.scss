@@ -1,0 +1,87 @@
+@media screen and (max-width: 300px) {
+  nav {
+    > a {
+      > h1 {
+        margin: 1rem 4rem 0 4rem;
+        font-size: 1rem;
+      }
+    }
+    > main {
+      display: none;
+    }
+  }
+  .button {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  nav {
+    > a {
+      > h1 {
+        margin: 1rem 5rem 0 5rem;
+        font-size: 1.5rem;
+        width: 60%;
+      }
+    }
+    > main {
+      display: none;
+    }
+  }
+  .button {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1023px) {
+  nav {
+    > a {
+      width: 70%;
+      > h1 {
+        font-size: 1.5rem;
+      }
+    }
+    > main {
+      margin-right: 12rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  nav {
+    > a {
+      > h1 {
+        font-size: 2rem;
+      }
+    }
+    > main {
+      margin-right: 12rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1679px) {
+  nav {
+    > a {
+      > h1 {
+        font-size: 2rem;
+      }
+    }
+    > main {
+      margin-right: 5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  nav {
+    > a {
+      > h1 {
+        font-size: 2rem;
+      }
+    }
+    > main {
+      margin-right: 1rem;
+    }
+  }
+}

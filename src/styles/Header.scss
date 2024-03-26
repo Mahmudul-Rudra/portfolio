@@ -1,0 +1,42 @@
+nav {
+  background-color: rgba(26, 32, 44, 1);
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  z-index: 10;
+  margin-top: 0rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  z-index: 1000;
+
+  > a {
+    > h1 {
+      text-transform: uppercase;
+      margin: 0.5rem 0 0 2rem;
+      font-weight: 700;
+      font-size: 2rem;
+      color: red;
+    }
+  }
+
+  > main {
+    width: 25%;
+    display: flex;
+    margin-top: 0.5rem;
+
+    > a {
+      font-weight: 700;
+      font-size: 1rem;
+      color: rgb(49, 131, 49);
+      margin: 1rem;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
