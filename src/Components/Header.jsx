@@ -38,7 +38,7 @@ const Header = () => {
           top={'4'}
           left={'2'}
           zIndex={'overlay'}
-          colorScheme="green"
+          colorScheme="#de1d20"
           p={'0'}
           w={'10'}
           h={'10'}
@@ -63,31 +63,12 @@ const Header = () => {
                 <Link to={'/about'}>About</Link>
               </Button>
               <Button onClick={onClose} variant={'ghost'} colorScheme="purple">
-                <Link to={'/upload'}>Projects</Link>
+                <Link to={'/projects'}>Projects</Link>
               </Button>
               <Button onClick={onClose} variant={'ghost'} colorScheme="purple">
-                <Link to={'/upload'}>Contact</Link>
+                <Link to={'/contact'}>Contact</Link>
               </Button>
             </VStack>
-
-            <HStack
-              pos={'absolute'}
-              bottom={'10'}
-              left={'0'}
-              w={'full'}
-              justifyContent={'space-evenly'}
-            >
-              <Button onClick={onClose} colorScheme={'purple'}>
-                <Link to={'/login'}>Login</Link>
-              </Button>
-              <Button
-                onClick={onClose}
-                colorScheme={'purple'}
-                variant={'outline'}
-              >
-                <Link to={'/signup'}>Sign Up</Link>
-              </Button>
-            </HStack>
           </DrawerBody>
         </DrawerContent>
       </Drawer>

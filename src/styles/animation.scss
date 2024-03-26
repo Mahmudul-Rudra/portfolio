@@ -71,12 +71,22 @@ body {
   // padding-left: 1em;
   grid-column: 1 / -1;
   grid-row: 1;
-  // text-align: center;
+  text-align: center;
   font-family: 'Prata', serif;
   font-size: 4vw;
   width: 100%;
   z-index: 2;
-
+  background-image: linear-gradient(
+    transparent 75%,
+    #f5c21a00 5%,
+    #ecdd85 90%,
+    transparent 50%,
+    transparent 50%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  animation: animatedBackground 3s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s
+    forwards;
   // start
 
   > .title-inner {
@@ -84,106 +94,107 @@ body {
   }
 }
 
-@keyframes text-clip {
-  from {
-    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-  }
-  to {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-}
-
-@keyframes outer-left {
-  from {
-    transform: translateX(50%);
-  }
-  to {
-    transform: none;
-  }
-}
-
-@keyframes inner-left {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: none;
-  }
-}
-
-.cafe,
-.mozart {
-  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
-  // outline: 1px solid red;
-}
-
-// [class*='inner'] {
-//   outline: 1px solid blue;
+// @keyframes text-clip {
+//   from {
+//     clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+//   }
+//   to {
+//     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+//   }
 // }
 
-.title-inner {
-  display: inline-block;
-  animation: inner-left 1s 1s ease both;
-}
+// @keyframes outer-left {
+//   from {
+//     transform: translateX(50%);
+//   }
+//   to {
+//     transform: none;
+//   }
+// }
 
-.cafe-inner {
-  display: inline-block;
-  animation: inner-left 1s 1s ease both,
-    text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
+// @keyframes inner-left {
+//   from {
+//     transform: translateX(-50%);
+//   }
+//   to {
+//     transform: none;
+//   }
+// }
 
-.mozart-inner {
-  animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
+// .cafe,
+// .mozart {
+//   animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+//   // outline: 1px solid red;
+// }
 
-.title {
-  animation: outer-left 1s 1s ease both;
-}
+// // [class*='inner'] {
+// //   outline: 1px solid blue;
+// // }
 
-.cafe {
-  // start
-  > .cafe-inner {
-    display: inline-block;
-  }
-}
+// .title-inner {
+//   display: inline-block;
+//   animation: inner-left 1s 1s ease both;
+// }
 
-.mozart {
-  display: inline-block;
-}
+// .cafe-inner {
+//   display: inline-block;
+//   animation: inner-left 1s 1s ease both,
+//     text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+// }
 
-.image {
-  grid-row: 1;
-  grid-column: 2;
-  margin-left: -2rem;
-  opacity: 0.7;
+// .mozart-inner {
+//   animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+// }
 
-  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+// .title {
+//   animation: outer-left 1s 1s ease both;
+// }
 
-  @keyframes image-in {
-    from {
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-    to {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-  }
+// .cafe {
+//   // start
+//   > .cafe-inner {
+//     display: inline-block;
+//   }
+// }
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-}
+// .mozart {
+//   display: inline-block;
+// }
 
-// Replay animation!
-body:active * {
-  animation: none !important;
-}
+// .image {
+//   grid-row: 1;
+//   grid-column: 2;
+//   margin-left: -2rem;
+//   opacity: 0.7;
+
+//   animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+
+//   @keyframes image-in {
+//     from {
+//       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+//     }
+//     to {
+//       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+//     }
+//   }
+
+//   img {
+//     display: block;
+//     width: 100%;
+//     height: auto;
+//   }
+// }
+
+// // Replay animation!
+// body:active * {
+//   animation: none !important;
+// }
 
 .resume-link {
+  font-weight: 900;
   text-decoration: none;
   color: inherit;
-  background-image: linear-gradient(to right, #f1e63f, #a18507);
+  background-image: linear-gradient(to right, #f7e600, #beae65);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

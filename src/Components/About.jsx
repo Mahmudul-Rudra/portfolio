@@ -20,7 +20,7 @@ const About = () => {
     <Box bg={gradient} minHeight="100vh">
       <Container maxW="container.l">
         <Stack
-          direction={{ base: 'column', sm: 'column', md: 'row' }}
+          direction={{ base: 'column', md: 'row' }}
           align="center"
           spacing={8}
           py={8}
@@ -41,11 +41,21 @@ const About = () => {
             <div className="title">
               <div className="title-inner">
                 <div className="cafe">
-                  <div className="cafe-inner">S. M. Mahmudul</div>
+                  <Box
+                    className="cafe-inner"
+                    fontSize={{ base: '8vw', lg: '4vw' }}
+                  >
+                    S. M. Mahmudul
+                  </Box>
                 </div>
-                <div className="mozart">
-                  <div className="mozart-inner">Hasan Rudra</div>
-                </div>
+                <Box className="mozart">
+                  <Box
+                    className="mozart-inner"
+                    fontSize={{ base: '8vw', lg: '4vw' }}
+                  >
+                    Hasan Rudra
+                  </Box>
+                </Box>
               </div>
             </div>
             <Text
@@ -78,10 +88,10 @@ const About = () => {
               processing and have hands-on experience with tools like MongoDB
               and GitHub. Moreover, I'm continuously expanding my skill set by
               exploring new technologies and frameworks like Django and Vue JS.
-              <br />
-              You can check out my Resume{' '}
+              <br /> <br />
+              Here you can check out my{' '}
               <a href="/Mahmudul's Resume.pdf" download className="resume-link">
-                HERE
+                RESUME
               </a>
             </Text>
           </Box>
