@@ -22,13 +22,7 @@ const Home = () => {
   return (
     <Box bg={gradient}>
       <Container minH={'100vh'} maxW={'container.l'} p={['0', '4']}>
-        <Stack
-          h="full"
-          mt={['16', '0']}
-          p={['2', '4']}
-          alignItems="center"
-          direction={'column'}
-        >
+        <Stack h="full" p={['2', '4']} alignItems="center" direction={'column'}>
           {/*<Image src={myImage} mb={['10', '0']} w={'100%'} h={'100%'} />*/}
           <Container
             w={'100%'}

@@ -38,7 +38,7 @@ const Header = () => {
           top={'4'}
           left={'2'}
           zIndex={'overlay'}
-          colorScheme="#de1d20"
+          colorScheme="red"
           p={'0'}
           w={'10'}
           h={'10'}
